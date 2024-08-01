@@ -8,7 +8,7 @@ import T5 from '../images/travel/ad.jpg';
 
 const Travel = () => {
   return (
-    <div className='w-[100%] flex flex-row bg-[#F1F2F4] pt-[20px] '>
+    <div className='w-[100%] flex flex-row bg-[#F1F2F4] pt-[20px] phone:bg-[#FFFFFF]'>
       <div className='w-[30%] bg-[white] ml-[20px] mr-[20px] mb-[20px]'>
         <div className='font-bold text-xl pt-[20px] pl-[20px]'>
           <p>Travel</p>
@@ -42,7 +42,7 @@ const Travel = () => {
           </div>
         </div>
       </div>
-      <div className='w-[70%] ml-20px pr-[20px]'>
+      <div className='w-[70%] ml-20px pr-[20px] phone:hidden'>
         <div >
           <img className='h-[600px]' src={T5} />
         </div>

@@ -10,9 +10,9 @@ import B8 from '../images/beauty/b8.jpeg';
 
 const Beauty = () => {
   return (
-    <div className='w-[100%] bg-[#F1F2F4] pt-[20px] flex flex-row'>
-      <div>
-        <div className='bg-[white] ml-[20px] mr-[20px] '>
+    <div className='w-[100%] bg-[#F1F2F4] pt-[20px] flex flex-row overflow-x-auto phone:bg-[#FFFFFF]'>
+      <div className='phone:flex '>
+        <div className='bg-[white] ml-[20px] mr-[20px]'>
           <div className='font-bold text-xl pt-[20px] pl-[20px]'>
             <h1>Beauty, Food, Toys & more</h1>
           </div>
@@ -26,16 +26,16 @@ const Beauty = () => {
             </div>
             <div className='w-[17%]  ml-[20px] box-border border-2 p-8 rounded mb-[20px]'>
               <div className='h-[180px]'>
-                <img className='w-[100%] h-[120px]' src={B2} />
-                <p className='text-sm pt-[30px]'>Electric Cycle</p>
+                <img className='w-[100%] h-[120px] phone:h-[60px]' src={B2} />
+                <p className='text-sm pt-[30px] '>Electric Cycle</p>
                 <p className='font-bold text-base'>Up to 40% Off</p>
               </div>
             </div>
             <div className='w-[17%] ml-[20px] box-border border-2 p-8 rounded mb-[20px]'>
               <div className='h-[180px]'>
-                <img className='h-[150px]' src={B3} />
+                <img className='h-[150px] phone:h-[80px]' src={B3} />
                 <p className='text-sm'>Dry Fruits</p>
-                <p className='font-bold text-base'>Up to 75% Off</p>
+                <p className='font-bold text-base phone:text-sm'>Up to 75% Off</p>
               </div>
             </div>
             <div className='w-[17%] ml-[20px] box-border border-2 p-8 rounded mb-[20px]'>
@@ -47,7 +47,7 @@ const Beauty = () => {
             </div>
             <div className='w-[17%] ml-[20px] box-border p-8 rounded border-2 mb-[20px]'>
               <div className='h-[180px]'>
-                <img className='h-[150px] pb-[10px]' src={B5} />
+                <img className='h-[150px] pb-[10px] phone:h-[100px]' src={B5} />
                 <p className='text-sm'>Coffee Powder</p>
                 <p className='font-bold text-base'>Up to 80% Off</p>
               </div>

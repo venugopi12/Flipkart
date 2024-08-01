@@ -11,7 +11,7 @@ import B8 from '../images/banners/b8.png';
 const Banners = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    B1,B2,B3,B4
+    B1,B2,B3,B4,B5,B6,B7,B8
   ];
 
   useEffect(() => {
@@ -23,8 +23,8 @@ const Banners = () => {
   }, []);
 
   return (
-    <div className='w-[100%] bg-[#F1F2F4] pt-[20px]'>
-      <div className='flex ml-[20px] mr-[20px]'>
+    <div className='w-[100%] bg-[#F1F2F4] pt-[20px] items-center justify-center'>
+      <div className='flex ml-[20px] mr-[20px] phone:ml-[5px] phone:mr-[5px]'>
         {images.map((image, index) => (
           <div key={index} style={{ display: index === currentIndex ? 'block' : 'none', flex:1}}>
             <img className='w-[100%]' src={image} alt={`Slide ${index}`}/>

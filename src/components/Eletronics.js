@@ -11,9 +11,9 @@ import E9 from '../images/eletronics/ad2.jpg'
 
 const Eletronics = () => {
   return (
-    <div className='w-[100%] bg-[#F1F2F4] pt-[20px] flex flex-row'>
-      <div className='w-[85%]'>
-        <div className='bg-[white] ml-[20px] mr-[20px] '>
+    <div className='w-[100%] bg-[#F1F2F4] pt-[20px] flex flex-row phone:bg-[#ffffff] overflow-x-auto'>
+      <div className='w-[85%] phone:flex'>
+        <div className='bg-[white] ml-[20px] mr-[20px]'>
           <div className='font-bold text-xl pt-[20px] pl-[20px]'>
             <h1>Best Of Electronics</h1>
           </div>
@@ -56,7 +56,7 @@ const Eletronics = () => {
           </div>
         </div>
       </div>
-      <div className='bg-[white] w-[15%] mr-[20px] mb-[5px] items-center justify-center'>
+      <div className='bg-[white] w-[15%] mr-[20px] mb-[5px] items-center justify-center phone:hidden'>
         <div className='pt-[20px]'>
           <img src={E9} />
         </div>
